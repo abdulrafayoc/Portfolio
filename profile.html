@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rafay - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Product Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+        <header class="p-5 mx-auto max-w-6xl">
+      <nav class="flex items-center justify-between text-gray-600">
+        <a href="index.html">
+          <img
+            class="h-11 px-2 pt-1 object-contain"
+            src="./media/logo.png"
+            alt="Your Logo"
+          />
+        </a>
+        <div class="hidden md:block space-x-8">
+          <a href="home.html" class="hover:text-gray-900">Home</a>
+          <a href="profile.html" class="hover:text-gray-900">Profile</a>
+          <a href="gallery.html" class="hover:text-gray-900">Gallery</a>
+          <a href="goals.html" class="hover:text-gray-900">Career Goals</a>
+          <a href="projects.html" class="hover:text-gray-900">Projects</a>
+          <a href="skills.html" class="hover:text-gray-900">Skills</a>
+          <a href="contact.html" class="hover:text-gray-900">Contact</a>
+        </div>
+
+        <!-- Hamburger Menu (for smaller screens) -->
+        <div class="md:hidden">
+          <button class="mobile-menu-button">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          class="mobile-menu hidden md:hidden absolute top-0 left-0 w-full h-screen bg-gray-50 z-50"
+        >
+          <div class="flex justify-between p-4 flex-col">
+            <div class="">
+              <button class="mobile-menu-button-close">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <ul class="py-6 px-4">
+              <li>
+                <a
+                  href="home.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="profile.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="goals.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Career Goals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="skills.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="py-2 px-4"></ul>
+        </div>
+      </nav>
+    </header>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+        const closeBtn = document.querySelector(
+          "button.mobile-menu-button-close"
+        );
+  
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+  
+        closeBtn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col gap-5 lg:flex-row items-stretch justify-between px-5 max-w-6xl mx-auto h-fit">
+        <div class="mb-8 md:mb-0 h-full lg:h-auto w-[45vw]">
+            <img src="./media/pp.jpg" alt="Profile Picture" class="rounded-[22px] shadow-lg w-full h-full object-cover">
+        </div>
+        <div class="space-y-6 p-10 rounded-[22px] bg-gradient-to-r hover:from-gray-200 hover:to-gray-400 hover: from-gray-300 to-gray-500">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900">
+                Heyyy! I'm Abdul Rafay, <br> Student of life
+            </h1>
+            <p class="text-gray-600 text-lg pb-16 md:text-xl">
+                I care a lot about using design for positive impact. I enjoy creating user-centric, delightful, and human experiences. Passionate student of life with a keen interest in leveraging design for positive impact. 
+                I'm currently exploring the intersection of technology and human-centered design.
+            </p>
+            <div class="space-y-4">
+                <button class=" text-lg bg-black text-white py-2 px-6 rounded-lg hover:bg-gray-900 transition">Contact me</button>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/abdulrafayoc" class="hover:opacity-75">
+                        <img src="./media/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.github.com/abdulrafayoc" class="hover:opacity-75">
+                        <img src="./media/github.png" alt="GitHub" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.twitter.com/abdulrafayoc" class="hover:opacity-75">
+                        <img src="./media/twitter.png" alt="Twitter" class="w-8 h-8">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+</body>
+</html>

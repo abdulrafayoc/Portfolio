@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rafay - Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Product Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="p-5 mx-auto max-w-6xl">
+        <nav class="flex items-center justify-between text-gray-600">
+          <a href="index.html">
+            <img
+              class="h-11 px-2 pt-1 object-contain"
+              src="./media/logo.png"
+              alt="Your Logo"
+            />
+          </a>
+          <div class="hidden md:block space-x-8">
+            <a href="home.html" class="hover:text-gray-900">Home</a>
+            <a href="profile.html" class="hover:text-gray-900">Profile</a>
+            <a href="gallery.html" class="hover:text-gray-900">Gallery</a>
+            <a href="goals.html" class="hover:text-gray-900">Career Goals</a>
+            <a href="projects.html" class="hover:text-gray-900">Projects</a>
+            <a href="skills.html" class="hover:text-gray-900">Skills</a>
+            <a href="contact.html" class="hover:text-gray-900">Contact</a>
+          </div>
+  
+          <!-- Hamburger Menu (for smaller screens) -->
+          <div class="md:hidden">
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+  
+          <!-- Mobile Menu -->
+          <div
+            class="mobile-menu hidden md:hidden absolute top-0 left-0 w-full h-screen bg-gray-50 z-50"
+          >
+            <div class="flex justify-between p-4 flex-col">
+              <div class="">
+                <button class="mobile-menu-button-close">
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <ul class="py-6 px-4">
+                <li>
+                  <a
+                    href="home.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="profile.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gallery.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="goals.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Career Goals</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="projects.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="skills.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="block text-gray-900 rounded-[8px] hover:bg-gray-200 py-2 px-4"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="py-2 px-4"></ul>
+          </div>
+        </nav>
+      </header>
+  
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+        const closeBtn = document.querySelector(
+          "button.mobile-menu-button-close"
+        );
+  
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+  
+        closeBtn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+
+    <section class="max-w-6xl mx-auto px-5 py-10">
+        <h1 class="text-4xl font-bold text-gray-900 text-center mb-10">My Projects</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+            <!-- Project 1 -->
+            <div class="bg-white shadow-lg rounded-[22px] overflow-hidden">
+                <img src="./media/pro1.png" alt="Project 1" class="object-cover">
+                <div class="p-4 absolute">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 1</h3>
+                    <p class="text-gray-600 mb-2">Short description of project 1 and its features.</p>
+                    <p class="text-sm text-gray-500 mb-2">
+                        <strong>Technologies:</strong> HTML, CSS, JavaScript
+                    </p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white shadow-lg rounded-[22px] overflow-hidden">
+                <img src="./media/pro2.png" alt="Project 2" class="object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 2</h3>
+                    <p class="text-gray-600 mb-2">Short description of project 2 and its features.</p>
+                    <p class="text-sm text-gray-500 mb-2">
+                        <strong>Technologies:</strong> Python, Django, PostgreSQL
+                    </p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white shadow-lg rounded-[22px] overflow-hidden">
+                <img src="./media/pro3.png" alt="Project 3" class="object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 3</h3>
+                    <p class="text-gray-600 mb-2">Short description of project 3 and its features.</p>
+                    <p class="text-sm text-gray-500 mb-2">
+                        <strong>Technologies:</strong> React, Node.js, MongoDB
+                    </p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-white shadow-lg rounded-[22px] overflow-hidden">
+                <img src="./media/pro4.png" alt="Project 4" class="object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 4</h3>
+                    <p class="text-gray-600 mb-2">Short description of project 4 and its features.</p>
+                    <p class="text-sm text-gray-500 mb-2">
+                        <strong>Technologies:</strong> Java, Spring Boot, MySQL
+                    </p>
+                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
